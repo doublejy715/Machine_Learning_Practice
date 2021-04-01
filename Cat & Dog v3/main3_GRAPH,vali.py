@@ -1,5 +1,6 @@
 # 참조 : https://lsjsj92.tistory.com/355 : 사이즈 조절
 from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.models import Model
 from model import models
 from opencv import Save_npz
 import csv
@@ -46,7 +47,6 @@ print(history.history)
 # GRAPH(추가 사항)
 # graph(model.fit의 출력으로 epoch마다 값을 저장한다.(list형식))
 import matplotlib.pyplot as plt
-"""
 # show in one graph
 fig, loss_ax = plt.subplots()
 
@@ -95,5 +95,5 @@ def show_graph(history_dict):
           fancybox=True, shadow=True, ncol=5)
 #     plt.legend(bbox_to_anchor=(1, 0))
     plt.show()
-
+"""
 show_graph(history.history)

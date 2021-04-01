@@ -72,7 +72,7 @@ model.compile(loss='categorical_crossentropy',optimizer='Adam',metrics=['accurac
 history = model.fit(x_train,y_train,batch_size=300,epochs=10,validation_data=(x_vali,y_vali))
 print(history.history)
 
-"""
+
 # graph(model.fit의 출력으로 epoch마다 값을 저장한다.(list형식))
 import matplotlib.pyplot as plt
 
@@ -110,4 +110,3 @@ def show_graph(history_dict):
     plt.show()
 
 show_graph(history.history)
-"""
